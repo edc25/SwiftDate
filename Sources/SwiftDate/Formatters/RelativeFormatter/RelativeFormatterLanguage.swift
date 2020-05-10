@@ -27,7 +27,7 @@ internal class RelativeFormatterLanguagesCache {
             let json = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments)
 
             if let value = json as? [String: Any] {
-                cachedValues[langID] = value
+                // cachedValues[langID] = value
                 return value
             } else {
                 return nil
